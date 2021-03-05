@@ -25,15 +25,16 @@
     "zcashd": {
       "flake": false,
       "locked": {
-        "lastModified": 1614946636,
-        "narHash": "sha256-F2FY5JwAn59fqynTzFFg4ITIcy7Hf84zsXv2q2XhS1Y=",
+        "lastModified": 1614203977,
+        "narHash": "sha256-epJ95jaODdMlW3P9tuH97JFvfyhLJGZRPB4kibgM9gI=",
         "owner": "zcash",
         "repo": "zcash",
-        "rev": "2aa9fbbdfebfb37a30333339bcdc063f16766d86",
+        "rev": "a675d9089d2e0e1c2aace78ba8beceab0e4fa859",
         "type": "github"
       },
       "original": {
         "owner": "zcash",
+        "ref": "v4.3.0",
         "repo": "zcash",
         "type": "github"
       }
