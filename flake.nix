@@ -13,14 +13,7 @@
       with import nixpkgs { system = "x86_64-linux"; };
       stdenv.mkDerivation {
         name = "zcashd";
-        src = self;
-        buildPhase = ''
-          set -x
-          echo WHEEEEEEEEEEEEEEEEE
-          ls -ld "${zcashd}"
-          ls -l "${zcashd}"
-        '';
-        installPhase = "mkdir -v $out/";
+        src = zcashd;
       };
   };
 }
