@@ -18,7 +18,24 @@
     },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "zcashd": "zcashd"
+      }
+    },
+    "zcashd": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1614946636,
+        "narHash": "sha256-F2FY5JwAn59fqynTzFFg4ITIcy7Hf84zsXv2q2XhS1Y=",
+        "owner": "zcash",
+        "repo": "zcash",
+        "rev": "2aa9fbbdfebfb37a30333339bcdc063f16766d86",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zcash",
+        "repo": "zcash",
+        "type": "github"
       }
     }
   },
