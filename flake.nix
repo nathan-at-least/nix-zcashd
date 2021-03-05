@@ -10,10 +10,18 @@
 
   outputs = { self, nixpkgs, zcashd }: {
     defaultPackage.x86_64-linux =
-      with import nixpkgs { system = "x86_64-linux"; };
-      stdenv.mkDerivation {
-        name = "zcashd";
-        src = zcashd;
-      };
+      let
+        inherit (import nixpkgs { system = "x86_64-linux"; })
+          stdenv
+          autoreconfHook
+        ;
+      in
+        stdenv.mkDerivation {
+          name = "zcashd";
+          src = zcashd;
+          buildInputs = [
+            autoreconfHook
+          ];
+        };
   };
 }
